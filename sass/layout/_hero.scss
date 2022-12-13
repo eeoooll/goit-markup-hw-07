@@ -1,0 +1,17 @@
+.hero { 
+    max-width: 1600px;
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image:
+    linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+     url("../images/hero-image.jpg");
+    background-color: #C4C4C4;
+  }

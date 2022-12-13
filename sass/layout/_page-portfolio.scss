@@ -1,0 +1,125 @@
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .filter-list__item:not(:nth-last-child(5n)) {
+    margin-left: 8px;
+  }
+  
+  .filter-list__button {
+    min-width: 73px;
+    min-height: 38px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--section-team-color);
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: var(--transition-link),
+    var(--transition-background-icon),
+    var(--transition-shadow-link);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--background-text-color);
+    box-shadow: 
+    0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  }
+  
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    
+  .portfolio-list__item{
+    width: 370px;
+    height: 404px;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .portfolio-item-border {
+    border: 1px solid var(--border-project-color);
+    border-top: none;
+    padding: 20px 24px;
+  }
+  
+  .portfolio-list__link{
+    display: block;
+    transition: var(--transition-shadow-link);
+
+    &:hover,
+    &:focus{
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  }
+  
+  .portfolio-thumb{
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .portfolio-thumb__text{
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }
+  
+  .portfolio-thumb__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: var(--transition-transform);
+   
+    .portfolio-list__link:hover &{
+      transform: translateY(0%);
+    }
+  }
+  
+  .portfolio-item-border__title {
+    margin-bottom: 4px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  
+  .portfolio-item-border__desc {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+  }

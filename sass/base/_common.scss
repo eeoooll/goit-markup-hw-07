@@ -1,0 +1,56 @@
+.page {
+    background-color: var(--background-text-color);
+    color: var(--primary-text-color);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+
+  /* uses accent color */
+
+/* navigation */
+.nav-list__link:hover,
+.nav-list__link:focus,
+.nav-list__link_current,
+/* contacts */
+.contacts-list__link:hover,
+.contacts-list__link:focus,
+/* footer contacts */
+.footer-address:hover,
+.footer-address:focus,
+.footer-cont:hover,
+.footer-cont:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-color);
+}

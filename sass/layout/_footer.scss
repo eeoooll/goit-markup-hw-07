@@ -1,0 +1,121 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer-background-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  .footer-contacts-link{
+    width: 231px;
+    margin-right: 70px;
+  }
+
+   .logo-footer {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .logo-footer_second_color{
+    color: var(--background-text-color);
+  }
+
+  .footer-address {
+    transition: var(--transition-link);
+    color: var(--background-text-color);
+  }
+
+  .footer-cont,
+  .footer-tel {
+    color: rgba(255, 255, 255, 60%);
+    transition: var(--transition-link);
+  }
+  
+  .footer-contacts-item:not(:nth-child(3n)) {
+    margin-bottom: 10px;
+  }
+  
+  .footer-social-list{
+    width: 206px;
+  }
+  
+  .footer-social-list__invitation,
+  .footer-email-submit__invitation{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  .social-list__link_footer{
+    background-color: rgba(255, 255, 255, 0.1);
+   }
+  
+  .social-list__icon_footer{
+    fill: #ffffff;
+  }
+
+  /* ---------------------footer email form */
+
+.footer-email-submit{
+  width: 570px;
+  margin-left: auto;
+}
+
+.email-input{
+  display: flex;
+}
+
+.footer-email-input{
+  margin-right: auto;
+}
+
+.footer-email-input{
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  margin-right: 12px;
+}
+
+.footer-email-submit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--background-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: var(--transition-shadow-link),
+  var(--transition-background-icon);
+
+  &:hover,
+  &:focus{
+  background-color: var(--button-hero-activ-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+}
+
+.footer-email-submit-btn__icon-send{
+  margin-left: 10px;
+}

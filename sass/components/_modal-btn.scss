@@ -1,0 +1,28 @@
+.container__button {
+  text-align: center;
+}
+
+.button-hero {
+    min-width: 216px;
+    min-height: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: var(--background-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: var(--transition-background-icon);
+
+    &:hover,
+    &:focus {
+    background-color: var(--button-hero-activ-color);
+  }
+  }
+  
+  
+  

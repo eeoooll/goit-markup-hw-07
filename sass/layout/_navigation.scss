@@ -1,0 +1,54 @@
+.nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+  
+  .logo_second_color {
+    color: var(--logo-header-second-color);
+  }
+  
+  /* -----------navigation */
+  .nav-list {
+    display: flex;
+    margin-left: 92px;
+
+    & .nav-list__item + .nav-list__item {
+      margin-left: 50px;
+    }
+  }
+  
+  .nav-list__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: var(--transition-link);
+  }
+  
+  .nav-list__link_current{
+    position: relative;
+  }
+  
+  .nav-list__link_current::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
