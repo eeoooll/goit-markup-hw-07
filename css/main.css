@@ -37,9 +37,9 @@
 }
 
 .page {
+  font-family: var(--main-font-family);
   background-color: var(--background-text-color);
   color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -475,12 +475,12 @@ address {
 }
 
 .logo {
-  color: var(--accent-color);
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
 .logo_second_color {
@@ -515,7 +515,6 @@ address {
   position: relative;
   color: var(--accent-color);
 }
-
 .nav-list__link_current::after {
   content: "";
   position: absolute;
