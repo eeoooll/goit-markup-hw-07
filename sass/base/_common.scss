@@ -1,7 +1,7 @@
 .page {
+    font-family: var(--main-font-family);
     background-color: var(--background-text-color);
     color: var(--primary-text-color);
-    font-family: "Roboto", sans-serif;
   }
   
   h1,
@@ -41,7 +41,6 @@
 /* navigation */
 .nav-list__link:hover,
 .nav-list__link:focus,
-.nav-list__link_current,
 /* contacts */
 .contacts-list__link:hover,
 .contacts-list__link:focus,

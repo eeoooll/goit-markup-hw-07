@@ -1,4 +1,6 @@
 :root {
+  --main-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --background-text-color: #ffffff;
@@ -76,7 +78,6 @@ address {
 /* navigation */
 .nav-list__link:hover,
 .nav-list__link:focus,
-.nav-list__link_current,
 .contacts-list__link:hover,
 .contacts-list__link:focus,
 .footer-address:hover,
@@ -130,12 +131,6 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-
-.advantagess-list__title,
-.employees-card__title {
-  color: var(--title-text-color);
-  margin-bottom: 10px;
 }
 
 .container__button {
@@ -518,6 +513,7 @@ address {
 
 .nav-list__link_current {
   position: relative;
+  color: var(--accent-color);
 }
 
 .nav-list__link_current::after {
@@ -611,6 +607,16 @@ address {
   margin-bottom: 30px;
 }
 
+.advantagess-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
 .advantagess-list__text {
   font-size: 14px;
   line-height: 1.71;
@@ -688,6 +694,8 @@ address {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 .employees-card__text {

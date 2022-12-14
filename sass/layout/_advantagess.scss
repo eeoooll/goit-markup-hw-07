@@ -20,6 +20,16 @@
     border-radius: 4px;
     margin-bottom: 30px;
   }
+
+  .advantagess-list__title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+}
   
   .advantagess-list__text {
     font-size: 14px;
